@@ -14,8 +14,35 @@ inquirer
     {
         type: "input",
         name: "description",
-        message: "Describe what your application will do"
-    }
+        message: "Describe your application and it's use."
+    },
+    {
+        type: "checkbox",
+        name: "license",
+        choices: ['mit', 'perl', 'mozilla'],
+        message: "Please select a license"
+    
+    },
+    {
+        type: "input",
+        name: "table of contents",
+        message: "Please list your table of contents"
+    },
+    {
+        type: "input",
+        name: "installation instructions",
+        message: "What were the steps required to install your project?"
+    },
+    {
+        type: "input",
+        name: "Usage",
+        message: "Describe the main use of the application?"
+    },
+    {
+        type: "input",
+        name: "contribution",
+        message: "List any contributors to this application"
+    },
 ]) 
 // const questions = [
 //     {

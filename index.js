@@ -20,13 +20,13 @@ inquirer
         type: "checkbox",
         name: "license",
         choices: ['mit', 'perl', 'mozilla'],
-        message: "Please select a license"
+        message: "Please select a license."
     
     },
     {
         type: "input",
         name: "table of contents",
-        message: "Please list your table of contents"
+        message: "Please list your table of contents."
     },
     {
         type: "input",
@@ -41,9 +41,14 @@ inquirer
     {
         type: "input",
         name: "contribution",
-        message: "List any contributors to this application"
+        message: "List any contributors to this application."
     },
 ]) 
+// .then((answers) => {
+//     console.log(answers)
+// }
+
+// )
 // const questions = [
 //     {
 //         type: "input",

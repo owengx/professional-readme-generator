@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 import inquirer from 'inquirer';
 import fs from 'fs';
+// import generateMarkdown from './utils/generateMarkdown';
 
 // TODO: Create an array of questions for user input
 inquirer
@@ -40,6 +41,11 @@ inquirer
         },
         {
             type: "input",
+            name: "test",
+            message: "How do you test your application?"
+        },
+        {
+            type: "input",
             name: "github",
             message: "Please enter your github username."
         },
@@ -56,10 +62,13 @@ inquirer
         const install = data.install;
         const usage = data.usage;
         const contribution = data.contribution;
+        const test = data.test;
         const github = data.github;
         const email = data.email;
+        console.log(data)
         console.log(`Thanks, one moment while I generate your ${data.title} file`);
 
+    
         const generateMarkdown = ` 
 # ${data.title}
 
@@ -70,12 +79,13 @@ inquirer
 
 
 ## Table of Contents
--Description 
--License
--Installation
--Usage
--Contributions
--Questions
+* [Description] (#description)
+* [License] (#license)
+* [Installation] (#installation)
+* [Usage] (#usage)
+* [Contributions] (#contributions)
+* [Test] (#test)
+* [Questions] (#questions)
 
 ## Installation 
 -${data.install}
@@ -86,8 +96,12 @@ ${data.usage}
 ## Contributions
 ${data.contribution}
 
+##Test
+${data.test}
+
 ## Questions 
- Check out my github profile ${data.github}.
+ Check out my github profile https://github.com/${data.github}/.
+
  For any additional questions please feel free to reach me at ${data.email}
 `;
 
@@ -102,8 +116,9 @@ ${data.contribution}
 // should call fs.writefile
 function writeToFile(fileName, data) {
 
-
 }
+
+
 // TODO: Create a function to initialize app
 // call inquirer.prompt(...).then(...)
 function init() {

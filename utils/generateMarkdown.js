@@ -48,7 +48,7 @@ ${data.usage}
 ${data.contribution}
 
 ## Questions 
- Check out my github profile ${data.github}.
+ Check out my github profile https://github.com/${data.github}/.
  For any additional questions please feel free to reach me at ${data.email}
 `;
 }

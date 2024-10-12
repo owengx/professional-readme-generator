@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license == "MIT") {
-    return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+    return "[![License: MIT](https://img.shields.io/badge/License-${data.license}-yellow.svg)](https://opensource.org/licenses/MIT)";
   } else if (license === "Mozilla") {
     return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0";
   } else if (license === "PERL") {
@@ -39,7 +39,7 @@ function generateMarkdown(data) { //similar to HTML function from mini project,
 -Questions
 
 ## Installation 
--${data.install}
+${data.install}
 
 ## Usage 
 ${data.usage}

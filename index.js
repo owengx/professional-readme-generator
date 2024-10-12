@@ -18,7 +18,7 @@ inquirer
             message: "Describe your application and it's use."
         },
         {
-            type: "checkbox",
+            type: "list",
             name: "license",
             choices: ['mit', 'perl', 'mozilla'],
             message: "Please select a license."
@@ -68,7 +68,7 @@ inquirer
         console.log(data)
         console.log(`Thanks, one moment while I generate your ${data.title} file`);
 
-    
+
         const generateMarkdown = ` 
 # ${data.title}
 
@@ -76,7 +76,7 @@ inquirer
   ${data.description}
 
 ## License
-
+ ${data.license}
 
 ## Table of Contents
 * [Description] (#description)
@@ -104,7 +104,7 @@ ${data.test}
 
  For any additional questions please feel free to reach me at ${data.email}
 `;
-
+//writes readme.md file
         fs.writeFile('README.md', generateMarkdown, (err) =>
             err ? console.log(err) : console.log('Successfully created README.md!'));
     });
@@ -127,3 +127,4 @@ function init() {
 
 // Function call to initialize app
 init();
+

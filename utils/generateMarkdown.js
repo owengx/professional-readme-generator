@@ -12,7 +12,10 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) { }
+function renderLicenseLink(license) {
+  // if {license !== "none"}
+  // return `/n* [license](#license)/n`
+ }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -25,7 +28,7 @@ function generateMarkdown(data) { //similar to HTML function from mini project,
   # ${data.title}
 
   ## Description
-  - ${data.description}
+  ${data.description}
 
 ## License
 - ${renderLicenseBadge(data.license)}

@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 import inquirer from 'inquirer';
 import fs from 'fs';
-// import generateMarkdown from './utils/generateMarkdown';
+import generateMarkdown from './utils/generateMarkdown.js';
 
 // TODO: Create an array of questions for user input
 inquirer
@@ -79,13 +79,13 @@ inquirer
  ${data.license}
 
 ## Table of Contents
-* [Description] (#description)
-* [License] (#license)
-* [Installation] (#installation)
-* [Usage] (#usage)
-* [Contributions] (#contributions)
-* [Test] (#test)
-* [Questions] (#questions)
+- [Description] (#description)
+- [License] (#license)
+- [Installation] (#installation)
+- [Usage] (#usage)
+- [Contributions] (#contributions)
+- [Test] (#test)
+- [Questions] (#questions)
 
 ## Installation 
 -${data.install}
@@ -114,15 +114,18 @@ ${data.test}
 
 // TODO: Create a function to write README file
 // should call fs.writefile
-function writeToFile(fileName, data) {
-
+function writeReadme(fileName, data) {
+return fs.writeFileSync(path.join(process.cwd().filename),data);
 }
 
 
 // TODO: Create a function to initialize app
 // call inquirer.prompt(...).then(...)
 function init() {
-
+// inquirer.prompt().then((data) =>{
+//     console.log('creating readme.md file');
+//     writeFile("./dist/README.md", generateMarkdown({response}));
+// })
 }
 
 // Function call to initialize app

@@ -31,8 +31,11 @@ A user can quickly generate a read me file for future projects by utilizing the 
         
 ## Contribution
 https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba (license badges)
+
 https://shields.io/ 
+
 https://agea.github.io/tutorial.md/ 
+
 Office Hours Recording
         
 ## Tests

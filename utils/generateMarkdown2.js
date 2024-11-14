@@ -50,12 +50,18 @@ function generateMarkdown(data) {
 ${data.description}
         
 ## Table of Contents
+* [Screenshots](#screenshots)
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
 * [Contribution](#contributon)
 * [Tests](#test)
 * [Questions](#questions)
+
+## Screenshots
+![Screenshot of project](./assets/screenshot1.png)
+![Screenshot of project](./assets/screenshot2.png)
+![Screenshot of project](./assets/screenshot3.png)
         
 ## Installation
  ${data.install}

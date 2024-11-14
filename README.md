@@ -19,7 +19,7 @@ It is used to generate a read me file
 ![Screenshot of project](https://github.com/owengx/professional-readme-generator/blob/cbf9ce4c6106a46003360d38654728d845c6b110/Screenshot1.png)
 ![Screenshot of project](https://github.com/owengx/professional-readme-generator/blob/73e3f42a6d95c0e11fa1ee888437cc2de9ffb829/Screenshot2.png)
 ![Screenshot of project](https://github.com/owengx/professional-readme-generator/blob/73e3f42a6d95c0e11fa1ee888437cc2de9ffb829/Screenshot3.png)
-![Video of project](https://github.com/owengx/professional-readme-generator/blob/731ab2b29333952ba963409862186f334336d88e/Challenge%207.mp4))
+![ScreenRecord](https://github.com/owengx/professional-readme-generator/blob/731ab2b29333952ba963409862186f334336d88e/Challenge%207.mp4))
         
 ## Installation
   Install the inquirer package and run index node.js in the terminal

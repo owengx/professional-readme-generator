@@ -25,21 +25,22 @@ function renderLicenseSection(license) { }
 function generateMarkdown(data) { //similar to HTML function from mini project,
   //except with a readme template instead of HTML
   return `
-  # ${data.title}
+ # ${data.title}
 
-  ## Description
+## Description
   ${data.description}
 
 ## License
-- ${renderLicenseBadge(data.license)}
+ ${data.license}
 
 ## Table of Contents
--Description 
--License
--Installation
--Usage
--Contributions
--Questions
+- [Description] (#description)
+- [License] (#license)
+- [Installation] (#installation)
+- [Usage] (#usage)
+- [Contributions] (#contributions)
+- [Test] (#test)
+- [Questions] (#questions)
 
 ## Installation 
 ${data.install}
@@ -50,8 +51,12 @@ ${data.usage}
 ## Contributions
 ${data.contribution}
 
+##Test
+${data.test}
+
 ## Questions 
  Check out my github profile https://github.com/${data.github}/.
+
  For any additional questions please feel free to reach me at ${data.email}
 `;
 }

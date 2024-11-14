@@ -17,8 +17,8 @@ It is used to generate a read me file
 
 ## Screenshots
 ![Screenshot of project](https://github.com/owengx/professional-readme-generator/blob/cbf9ce4c6106a46003360d38654728d845c6b110/Screenshot1.png)
-![Screenshot of project](./assets/screenshot2.png)
-![Screenshot of project](./assets/screenshot3.png)
+![Screenshot of project](https://github.com/owengx/professional-readme-generator/blob/73e3f42a6d95c0e11fa1ee888437cc2de9ffb829/Screenshot2.png)
+![Screenshot of project](https://github.com/owengx/professional-readme-generator/blob/73e3f42a6d95c0e11fa1ee888437cc2de9ffb829/Screenshot3.png)
         
 ## Installation
   Install the inquirer package and run index node.js in the terminal

@@ -17,7 +17,7 @@ const questions = [{
 {
     type: "list",
     name: "license",
-    choices: ['none','mit', 'perl', 'mozilla'],
+    choices: ['None','MIT', 'Perl', 'Mozilla'],
     message: "Please select a license."
 
 },

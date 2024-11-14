@@ -16,7 +16,7 @@ It is used to generate a read me file
 * [Questions](#questions)
 
 ## Screenshots
-![Screenshot of project](./assets/screenshot1.png)
+![Screenshot of project](https://github.com/owengx/professional-readme-generator/blob/cbf9ce4c6106a46003360d38654728d845c6b110/Screenshot1.png)
 ![Screenshot of project](./assets/screenshot2.png)
 ![Screenshot of project](./assets/screenshot3.png)
         
